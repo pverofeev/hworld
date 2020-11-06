@@ -1,0 +1,14 @@
+{% extends 'main\loyout.html' %}
+
+{% block  title%}
+ Главная страница
+{% endblock%}
+
+{% block  content%}
+
+<a href=http://127.0.0.1:8000/about>Ссылка about </a>
+<br>
+<a href=http://127.0.0.1:8000/admin>Ссылка admin </a>
+
+{%include 'main/test.html'%}
+{% endblock%}
