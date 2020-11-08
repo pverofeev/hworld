@@ -9,10 +9,19 @@
     <title> {% block title %}   {% endblock %}</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="{%static 'main/css/main.css' %}">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 </head>
 <body>
     <aside>
-        <img src="{% static 'main/img/img1.PNG'%}">
+        <img src="{% static 'main/img/world.PNG'%}">
+        <span class="logo"> My Project </span>
+        <h3>Навигация</h3>
+         <ul>
+           <a  href="{% url 'home'%}"> <li> <i class="fas fa-home"></i> Главная</li> </a>
+             <a  href="{% url 'about'%}">     <li><i class="fas fa-address-card"></i> Про нас</li></a>
+              <a  href="{% url 'contacts'%}">    <li><i class="fas fa-id-card-alt"></i> Контакты</li></a>
+              <a  href="/admin">    <li><i <i class="fas fa-users-cog"></i> Admin</li></a>
+        </ul>
     </aside>
     <main>
     {% block content %}
